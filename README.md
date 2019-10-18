@@ -1,4 +1,4 @@
-# React Native: react-native-clock-analog
+# React Native: idea-native-clock
 
 [![GitHub package version](https://img.shields.io/github/package-json/v/kishor98100/idea-native-analog-clock)](https://github.com/kishor98100/idea-native-analog-clock)
 [![github home](https://img.shields.io/npm/v/idea-native-clock)](https://www.npmjs.com/package/idea-native-clock)
