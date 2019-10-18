@@ -1,8 +1,31 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 
 export default class AnalogClock extends React.Component {
+  constructor(props) {
+    super(props);
+    let d = new Date();
+    this.state = {
+      hour: d.getHours(),
+      minutes: d.getMinutes(),
+      seconds: d.getSeconds(),
+    };
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      let d = new Date();
+      this.setState({
+        hour: d.getHours(),
+        minutes: d.getMinutes(),
+        seconds: d.getSeconds(),
+      });
+    }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
   render() {
     let {
       size,
@@ -12,22 +35,20 @@ export default class AnalogClock extends React.Component {
       colorHour,
       colorMinutes,
       colorSeconds,
-      hour,
-      minutes,
-      seconds,
     } = this.props;
+    let {hour, minutes, seconds} = this.state;
+    
     var date = new Date();
     if (!hour) hour = date.getHours();
     hour = hour > 12 ? hour - 12 : hour;
     if (!minutes) minutes = date.getMinutes();
     minutes = minutes / 5;
-    if(!seconds) seconds = date.getSeconds();
-    seconds = seconds/5;
-  
+    if (!seconds) seconds = date.getSeconds();
+    seconds = seconds / 5;
 
     var lanHour = size / 5;
     var lanMinutes = size / 3.75;
-    var lanSeconds = size/3.75;
+    var lanSeconds = size / 3.75;
 
     return (
       <View
@@ -46,17 +67,14 @@ export default class AnalogClock extends React.Component {
             <View
               style={{
                 position: 'absolute',
-                transform: [
-                  { rotate: a + 'deg' },
-                  { translateX: size / 2 - 15 },
-                ],
+                transform: [{rotate: a + 'deg'}, {translateX: size / 2 - 15}],
               }}>
               <Text
                 style={{
                   color: colorNumber,
                   fontSize: size / 9,
                   fontWeight: 'bold',
-                  transform: [{ rotate: b + 'deg' }],
+                  transform: [{rotate: b + 'deg'}],
                 }}>
                 {i + 1}
               </Text>
@@ -80,8 +98,8 @@ export default class AnalogClock extends React.Component {
             borderRadius: 4,
             backgroundColor: colorHour,
             transform: [
-              { rotate: -90 + hour * 30 + 'deg' },
-              { translateX: lanHour / 2 },
+              {rotate: -90 + hour * 30 + 'deg'},
+              {translateX: lanHour / 2},
             ],
           }}
         />
@@ -93,8 +111,8 @@ export default class AnalogClock extends React.Component {
             borderRadius: 4,
             backgroundColor: colorMinutes,
             transform: [
-              { rotate: -90 + minutes * 30 + 'deg' },
-              { translateX: lanMinutes / 2 },
+              {rotate: -90 + minutes * 30 + 'deg'},
+              {translateX: lanMinutes / 2},
             ],
           }}
         />
@@ -106,8 +124,8 @@ export default class AnalogClock extends React.Component {
             borderRadius: 4,
             backgroundColor: colorSeconds,
             transform: [
-              { rotate: -90 + seconds *30 + 'deg' },
-              { translateX: lanSeconds / 2 },
+              {rotate: -90 + seconds * 30 + 'deg'},
+              {translateX: lanSeconds / 2},
             ],
           }}
         />
@@ -134,5 +152,5 @@ AnalogClock.defaultProps = {
   colorCenter: '#fff',
   colorHour: '#fff',
   colorMinutes: '#f00',
-  colorSeconds:'#fff'
+  colorSeconds: '#fff',
 };
