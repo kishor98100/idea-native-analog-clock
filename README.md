@@ -1,14 +1,14 @@
 # React Native: react-native-clock-analog
 
-[![GitHub package version](https://img.shields.io/github/package-json/v/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=2b7cff)](https://github.com/gaetanozappi/react-native-clock-analog)
+[![GitHub package version](https://img.shields.io/github/package-json/v/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=2b7cff)](https://github.com/kishor98100/idea-native-analog-clock)
 [![github home](http://img.shields.io/npm/v/react-native-clock-analog.svg?style=flat)](https://www.npmjs.com/package/react-native-clock-analog)
 ![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat&colorB=191A17)
 [![github home](https://img.shields.io/badge/gaetanozappi-react--native--clock--analog-blue.svg?style=flat)](https://github.com/gaetanozappi/react-native-clock-analog)
 [![npm](https://img.shields.io/npm/dm/react-native-clock-analog.svg?style=flat&colorB=007ec6)](https://www.npmjs.com/package/react-native-clock-analog)
 
-[![github issues](https://img.shields.io/github/issues/gaetanozappi/react-native-clock-analog.svg?style=flat)](https://github.com/gaetanozappi/react-native-clock-analog/issues)
-[![github closed issues](https://img.shields.io/github/issues-closed/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=44cc11)](https://github.com/gaetanozappi/react-native-clock-analog/issues?q=is%3Aissue+is%3Aclosed)
-[![Issue Stats](https://img.shields.io/issuestats/i/github/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=44cc11)](http://github.com/gaetanozappi/react-native-clock-analog/issues)
+[![github issues](https://img.shields.io/github/issues/gaetanozappi/react-native-clock-analog.svg?style=flat)](https://github.com/kishor98100/idea-native-analog-clock/issues)
+[![github closed issues](https://img.shields.io/github/issues-closed/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=44cc11)](https://github.com/kishor98100/idea-native-analog-clock/issues?q=is%3Aissue+is%3Aclosed)
+[![Issue Stats](https://img.shields.io/issuestats/i/github/gaetanozappi/react-native-clock-analog.svg?style=flat&colorB=44cc11)](https://github.com/kishor98100/idea-native-analog-clock/issues)
 [![github license](https://img.shields.io/github/license/gaetanozappi/react-native-clock-analog.svg)]()
 
 <img src="https://github.com/gaetanozappi/react-native-clock-analog/raw/master/screenshot/react-native-clock-analog.png" />

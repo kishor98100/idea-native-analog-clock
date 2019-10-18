@@ -14,6 +14,11 @@
     "analog",
     "analog-clock"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishor98100/idea-native-analog-clock.git"
+  },
+ 
   "author": "Kishor Mainali",
   "license": "MIT"
 }
