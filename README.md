@@ -8,7 +8,6 @@
 
 [![github license](https://img.shields.io/npm/l/idea-native-clock)](https://github.com/kishor98100/idea-native-analog-clock)
 
-<!-- <img src="https://github.com/gaetanozappi/react-native-clock-analog/raw/master/screenshot/react-native-clock-analog.png" /> -->
 
 -   [Usage](#-usage)
 -   [License](#-license)
