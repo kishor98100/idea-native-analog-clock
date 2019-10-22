@@ -60,11 +60,12 @@ export default class AnalogClock extends React.Component {
           height: size,
           width: size,
         }}>
-        {[...Array(12).keys()].map(i => {
+        {[...Array(12).keys()].map((i,key) => {
           let a = -60 + 30 * i;
           let b = 60 - 30 * i;
           return (
             <View
+            key={key}
               style={{
                 position: 'absolute',
                 transform: [{rotate: a + 'deg'}, {translateX: size / 2 - 15}],

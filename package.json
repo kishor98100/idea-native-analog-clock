@@ -1,6 +1,6 @@
 {
   "name": "idea-native-clock",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Analog Clock for React Native",
   "main": "index.js",
   "scripts": {
